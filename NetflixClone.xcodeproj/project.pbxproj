@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2BD5451B2C52A23100B69510 /* NetflixCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD5451A2C52A23100B69510 /* NetflixCloneApp.swift */; };
-		2BD5451D2C52A23100B69510 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD5451C2C52A23100B69510 /* ContentView.swift */; };
+		2BD5451D2C52A23100B69510 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD5451C2C52A23100B69510 /* MainView.swift */; };
 		2BD5451F2C52A23200B69510 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BD5451E2C52A23200B69510 /* Assets.xcassets */; };
 		2BD545222C52A23200B69510 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BD545212C52A23200B69510 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		2BD545172C52A23100B69510 /* NetflixClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetflixClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BD5451A2C52A23100B69510 /* NetflixCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetflixCloneApp.swift; sourceTree = "<group>"; };
-		2BD5451C2C52A23100B69510 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2BD5451C2C52A23100B69510 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		2BD5451E2C52A23200B69510 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BD545212C52A23200B69510 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,7 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				2BD5451A2C52A23100B69510 /* NetflixCloneApp.swift */,
-				2BD5451C2C52A23100B69510 /* ContentView.swift */,
+				2BD5451C2C52A23100B69510 /* MainView.swift */,
 				2BD5451E2C52A23200B69510 /* Assets.xcassets */,
 				2BD545202C52A23200B69510 /* Preview Content */,
 			);
@@ -137,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BD5451D2C52A23100B69510 /* ContentView.swift in Sources */,
+				2BD5451D2C52A23100B69510 /* MainView.swift in Sources */,
 				2BD5451B2C52A23100B69510 /* NetflixCloneApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
