@@ -2,7 +2,7 @@
 //  MainView.swift
 //  NetflixClone
 //
-//  Created by Kasa 3 - Tychy on 25/07/2024.
+//  Created by Mateusz Ratajczak on 25/07/2024.
 //
 
 import SwiftUI
