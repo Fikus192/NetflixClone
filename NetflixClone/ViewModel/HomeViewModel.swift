@@ -9,6 +9,9 @@ import SwiftUI
 
 final class HomeViewModel: ObservableObject {
     
+    @Published var filters = FilterModel.mockArray
+    @Published var selectedFilter: FilterModel? = nil
+    
     @ViewBuilder
     internal func header() -> some View {
         HStack(spacing: 0) {

@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-struct HomeView: View {
+internal struct HomeView: View {
     
     @StateObject private var vm = HomeViewModel()
     
-    var body: some View {
+    internal var body: some View {
         ZStack {
             Color.theme.customBlack
                 .ignoresSafeArea()
@@ -19,6 +19,18 @@ struct HomeView: View {
             VStack(spacing: 0) {
                 vm.header()
                     .padding(.horizontal, 16)
+                
+                FilterBarView(
+                    filters: vm.filters,
+                    selectedFilter: vm.selectedFilter,
+                    onFilterPressed: { newFilter in
+                        vm.selectedFilter = newFilter
+                    },
+                    onXMarkPressed: {
+                        vm.selectedFilter = nil
+                    }
+                )
+                .padding(.top, 16)
                 
                 Spacer()
             }
