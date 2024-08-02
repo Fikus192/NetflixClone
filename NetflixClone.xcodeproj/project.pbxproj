@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2B27B5522C5CF62E00FF0C83 /* HeroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B27B5512C5CF62E00FF0C83 /* HeroView.swift */; };
+		2B27B5542C5D4D0B00FF0C83 /* FrameReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B27B5532C5D4D0B00FF0C83 /* FrameReader.swift */; };
 		2B87E73B2C59560000B01934 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B87E73A2C59560000B01934 /* Color+Extensions.swift */; };
 		2B87E7402C5958B100B01934 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B87E73F2C5958B100B01934 /* HomeViewModel.swift */; };
 		2B87E7422C595B4B00B01934 /* SingleFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B87E7412C595B4B00B01934 /* SingleFilterView.swift */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		2B27B5512C5CF62E00FF0C83 /* HeroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroView.swift; sourceTree = "<group>"; };
+		2B27B5532C5D4D0B00FF0C83 /* FrameReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameReader.swift; sourceTree = "<group>"; };
 		2B87E73A2C59560000B01934 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 		2B87E73F2C5958B100B01934 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		2B87E7412C595B4B00B01934 /* SingleFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleFilterView.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				2B87E7412C595B4B00B01934 /* SingleFilterView.swift */,
+				2B27B5532C5D4D0B00FF0C83 /* FrameReader.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 				2BD5452F2C52A9D300B69510 /* Constants.swift in Sources */,
 				2B87E7442C59607800B01934 /* FilterBarView.swift in Sources */,
 				2BD545342C52D07900B69510 /* Product.swift in Sources */,
+				2B27B5542C5D4D0B00FF0C83 /* FrameReader.swift in Sources */,
 				2B27B5522C5CF62E00FF0C83 /* HeroView.swift in Sources */,
 				2B87E7422C595B4B00B01934 /* SingleFilterView.swift in Sources */,
 				2BD545362C52D07E00B69510 /* User.swift in Sources */,
