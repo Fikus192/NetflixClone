@@ -17,9 +17,22 @@ internal struct Product: Codable, Identifiable {
     let title, description: String
     let price, discountPercentage, rating: Double
     let stock: Int
-    let brand: String
-    let weight: Int
-    let warrantyInformation, shippingInformation: String
+    let category: String
+    let brand: String?
     let images: [String]
     let thumbnail: String
+    
+    var firstImage: String {
+        images.first ?? Constants.randomImage
+    }
+    
+    var _brand: String {
+        brand ?? ""
+    }
+}
+
+internal struct ProductRow: Identifiable {
+    let id = UUID().uuidString
+    let title: String
+    let products: [Product]
 }

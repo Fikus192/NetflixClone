@@ -12,9 +12,43 @@ internal struct HomeView: View {
     @StateObject private var vm = HomeViewModel()
     
     internal var body: some View {
-        ZStack {
+        ZStack(alignment: .top) {
             Color.theme.customBlack
                 .ignoresSafeArea()
+            
+            ScrollView {
+                VStack(spacing: 8) {
+                    Rectangle()
+                        .opacity(0)
+                        .frame(height: vm.fullHeaderSize.height)
+                    
+                    if let heroProduct = vm.heroProduct {
+                        HeroView(
+                            imageName: heroProduct.firstImage,
+                            isNetflixFilm: true,
+                            title: heroProduct.title,
+                            categories: [heroProduct.category.capitalized, heroProduct._brand],
+                            onBackgroundPressed: {
+                                
+                            },
+                            onPlayPressed: {
+                                
+                            },
+                            onMyListPressed: {
+                                
+                            }
+                        )
+                        .padding(24)
+                    }
+                    
+                    ForEach(0..<20) { _ in
+                        Rectangle()
+                            .fill(Color.theme.customRed)
+                            .frame(height: 200)
+                    }
+                }
+            }
+            .scrollIndicators(.hidden)
             
             VStack(spacing: 0) {
                 vm.header()
@@ -31,11 +65,16 @@ internal struct HomeView: View {
                     }
                 )
                 .padding(.top, 16)
-                
-                Spacer()
+            }
+            .readingFrame { frame in
+                vm.fullHeaderSize = frame.size
             }
         }
         .foregroundStyle(Color.theme.customWhite)
+        .task {
+            await vm.getData()
+        }
+        .toolbar(.hidden, for: .navigationBar)
     }
 }
 
