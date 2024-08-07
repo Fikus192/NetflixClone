@@ -23,29 +23,10 @@ internal struct HomeView: View {
                         .frame(height: vm.fullHeaderSize.height)
                     
                     if let heroProduct = vm.heroProduct {
-                        HeroView(
-                            imageName: heroProduct.firstImage,
-                            isNetflixFilm: true,
-                            title: heroProduct.title,
-                            categories: [heroProduct.category.capitalized, heroProduct._brand],
-                            onBackgroundPressed: {
-                                
-                            },
-                            onPlayPressed: {
-                                
-                            },
-                            onMyListPressed: {
-                                
-                            }
-                        )
-                        .padding(24)
+                        vm.heroCell(product: heroProduct)
                     }
                     
-                    ForEach(0..<20) { _ in
-                        Rectangle()
-                            .fill(Color.theme.customRed)
-                            .frame(height: 200)
-                    }
+                    vm.categoryRows()
                 }
             }
             .scrollIndicators(.hidden)

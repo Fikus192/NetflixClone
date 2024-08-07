@@ -59,4 +59,52 @@ final class HomeViewModel: ObservableObject {
             
         }
     }
+    
+    @ViewBuilder
+    internal func heroCell(product: Product) -> some View {
+        HeroView(
+            imageName: product.firstImage,
+            isNetflixFilm: true,
+            title: product.title,
+            categories: [product.category.capitalized, product._brand],
+            onBackgroundPressed: {
+                
+            },
+            onPlayPressed: {
+                
+            },
+            onMyListPressed: {
+                
+            }
+        )
+        .padding(24)
+    }
+    
+    @ViewBuilder
+    internal func categoryRows() -> some View {
+        LazyVStack(spacing: 16) {
+            ForEach(Array(productRows.enumerated()), id: \.offset) { (rowIndex, row) in
+                VStack(alignment: .leading, spacing: 6) {
+                    Text(row.title)
+                        .font(.headline)
+                        .padding(.horizontal, 16)
+                    
+                    ScrollView(.horizontal) {
+                        LazyHStack {
+                            ForEach(Array(row.products.enumerated()), id: \.offset) { (index, product) in
+                                MovieRowView(
+                                    imageName: product.firstImage,
+                                    title: product.title,
+                                    isRecentlyAdded: product.recentlyAdded,
+                                    topTenRanking: rowIndex == 1 ? (index + 1) : nil
+                                )
+                            }
+                        }
+                        .padding(.horizontal, 16)
+                    }
+                    .scrollIndicators(.hidden)
+                }
+            }
+        }
+    }
 }
