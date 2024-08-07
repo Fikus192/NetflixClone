@@ -4,6 +4,8 @@
 //
 //  Created by Mateusz Ratajczak on 07/08/2024.
 //
+//  From SwiftfulThinking:
+//  https://github.com/SwiftfulThinking/SwiftfulUI/blob/main/Sources/SwiftfulUI/GeometryReaders/LocationReader.swift#L14
 
 import SwiftUI
 

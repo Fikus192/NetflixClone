@@ -4,6 +4,8 @@
 //
 //  Created by Mateusz Ratajczak on 02/08/2024.
 //
+//  From SwiftfulThinking:
+//  https://github.com/SwiftfulThinking/SwiftfulUI/blob/main/Sources/SwiftfulUI/GeometryReaders/FrameReader.swift#L14
 
 import SwiftUI
 
