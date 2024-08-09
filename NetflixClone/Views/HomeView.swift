@@ -16,40 +16,11 @@ internal struct HomeView: View {
             Color.theme.customBlack
                 .ignoresSafeArea()
             
-            ScrollView {
-                VStack(spacing: 8) {
-                    Rectangle()
-                        .opacity(0)
-                        .frame(height: vm.fullHeaderSize.height)
-                    
-                    if let heroProduct = vm.heroProduct {
-                        vm.heroCell(product: heroProduct)
-                    }
-                    
-                    vm.categoryRows()
-                }
-            }
-            .scrollIndicators(.hidden)
+            vm.backgroundGradientLayer()
             
-            VStack(spacing: 0) {
-                vm.header()
-                    .padding(.horizontal, 16)
-                
-                FilterBarView(
-                    filters: vm.filters,
-                    selectedFilter: vm.selectedFilter,
-                    onFilterPressed: { newFilter in
-                        vm.selectedFilter = newFilter
-                    },
-                    onXMarkPressed: {
-                        vm.selectedFilter = nil
-                    }
-                )
-                .padding(.top, 16)
-            }
-            .readingFrame { frame in
-                vm.fullHeaderSize = frame.size
-            }
+            vm.scrollViewLayer()
+            
+            vm.headerWithFilters()
         }
         .foregroundStyle(Color.theme.customWhite)
         .task {
