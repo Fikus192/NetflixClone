@@ -33,6 +33,22 @@ internal struct Product: Codable, Identifiable {
     let recentlyAdded: Bool = {
         return Int.random(in: 1...4) == 1
     }()
+    
+    static var mock: Product {
+        Product(
+            id: 997,
+            title: "Example Title",
+            description: "This is description of the title!",
+            price: 169,
+            discountPercentage: 10,
+            rating: 4.0,
+            stock: 35,
+            category: "Electronic Devices",
+            brand: "Apple",
+            images: [Constants.randomImage, Constants.randomImage, Constants.randomImage],
+            thumbnail: Constants.randomImage
+        )
+    }
 }
 
 internal struct ProductRow: Identifiable {

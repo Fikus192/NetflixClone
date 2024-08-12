@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MovieDetailsView: View {
     
-    var product: Product? = nil
+    var product: Product = .mock
     @State private var progress: Double = 0.2
     
     var body: some View {
@@ -22,7 +22,7 @@ struct MovieDetailsView: View {
             
             VStack(spacing: 0) {
                 DetailsHeaderView(
-                    imageName: product?.firstImage ?? Constants.randomImage,
+                    imageName: product.firstImage,
                     progress: progress,
                     onAirplayPressed: {
                         
@@ -33,7 +33,25 @@ struct MovieDetailsView: View {
                 )
                 
                 ScrollView(.vertical) {
-                    
+                    VStack(spacing: 16) {
+                        DetailsProductView(
+                            title: product.title,
+                            isNew: true,
+                            yearReleased: "2024",
+                            seasonCount: 3,
+                            hasClosedCaptions: true,
+                            isTopTen: 2,
+                            descriptionText: product.description,
+                            castText: "Cast: Matheo",
+                            onPlayPressed: {
+                                
+                            },
+                            onDownloadPressed: {
+                                
+                            }
+                        )
+                    }
+                    .padding(8)
                 }
                 .scrollIndicators(.hidden)
             }
