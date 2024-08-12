@@ -30,6 +30,7 @@
 		2BF8F4692C66619B0076C0FF /* MovieDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF8F4682C66619B0076C0FF /* MovieDetailsView.swift */; };
 		2BF8F46B2C6662C30076C0FF /* DetailsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF8F46A2C6662C30076C0FF /* DetailsHeaderView.swift */; };
 		2BF8F46D2C66642C0076C0FF /* CustomProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF8F46C2C66642C0076C0FF /* CustomProgressBar.swift */; };
+		2BF8F46F2C67AEF40076C0FF /* DetailsProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF8F46E2C67AEF40076C0FF /* DetailsProductView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		2BF8F4682C66619B0076C0FF /* MovieDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsView.swift; sourceTree = "<group>"; };
 		2BF8F46A2C6662C30076C0FF /* DetailsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsHeaderView.swift; sourceTree = "<group>"; };
 		2BF8F46C2C66642C0076C0FF /* CustomProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProgressBar.swift; sourceTree = "<group>"; };
+		2BF8F46E2C67AEF40076C0FF /* DetailsProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsProductView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				2B86656B2C63D14A0079DAB5 /* ScrollViewWithOnScrollChanged.swift */,
 				2BF8F46A2C6662C30076C0FF /* DetailsHeaderView.swift */,
 				2BF8F46C2C66642C0076C0FF /* CustomProgressBar.swift */,
+				2BF8F46E2C67AEF40076C0FF /* DetailsProductView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				2B27B5522C5CF62E00FF0C83 /* HeroView.swift in Sources */,
 				2B87E7422C595B4B00B01934 /* SingleFilterView.swift in Sources */,
 				2BD545362C52D07E00B69510 /* User.swift in Sources */,
+				2BF8F46F2C67AEF40076C0FF /* DetailsProductView.swift in Sources */,
 				2B86656C2C63D14A0079DAB5 /* ScrollViewWithOnScrollChanged.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

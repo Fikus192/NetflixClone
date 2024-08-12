@@ -10,6 +10,7 @@ import SwiftUI
 struct MovieDetailsView: View {
     
     var product: Product? = nil
+    @State private var progress: Double = 0.2
     
     var body: some View {
         ZStack {
@@ -20,7 +21,21 @@ struct MovieDetailsView: View {
                 .ignoresSafeArea()
             
             VStack(spacing: 0) {
+                DetailsHeaderView(
+                    imageName: product?.firstImage ?? Constants.randomImage,
+                    progress: progress,
+                    onAirplayPressed: {
+                        
+                    },
+                    onXMarkPressed: {
+                        
+                    }
+                )
                 
+                ScrollView(.vertical) {
+                    
+                }
+                .scrollIndicators(.hidden)
             }
         }
     }
