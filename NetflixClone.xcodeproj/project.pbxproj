@@ -18,6 +18,7 @@
 		2B87E7442C59607800B01934 /* FilterBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B87E7432C59607800B01934 /* FilterBarView.swift */; };
 		2B87E7462C59609400B01934 /* FilterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B87E7452C59609400B01934 /* FilterModel.swift */; };
 		2BA3FDA22C6D0FBA000F0F13 /* MyListButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA3FDA12C6D0FBA000F0F13 /* MyListButton.swift */; };
+		2BA3FDA42C6D126B000F0F13 /* RateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA3FDA32C6D126B000F0F13 /* RateButton.swift */; };
 		2BD5451B2C52A23100B69510 /* NetflixCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD5451A2C52A23100B69510 /* NetflixCloneApp.swift */; };
 		2BD5451D2C52A23100B69510 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD5451C2C52A23100B69510 /* HomeView.swift */; };
 		2BD5451F2C52A23200B69510 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BD5451E2C52A23200B69510 /* Assets.xcassets */; };
@@ -46,6 +47,7 @@
 		2B87E7432C59607800B01934 /* FilterBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterBarView.swift; sourceTree = "<group>"; };
 		2B87E7452C59609400B01934 /* FilterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterModel.swift; sourceTree = "<group>"; };
 		2BA3FDA12C6D0FBA000F0F13 /* MyListButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListButton.swift; sourceTree = "<group>"; };
+		2BA3FDA32C6D126B000F0F13 /* RateButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateButton.swift; sourceTree = "<group>"; };
 		2BD545172C52A23100B69510 /* NetflixClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetflixClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BD5451A2C52A23100B69510 /* NetflixCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetflixCloneApp.swift; sourceTree = "<group>"; };
 		2BD5451C2C52A23100B69510 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				2BF8F46C2C66642C0076C0FF /* CustomProgressBar.swift */,
 				2BF8F46E2C67AEF40076C0FF /* DetailsProductView.swift */,
 				2BA3FDA12C6D0FBA000F0F13 /* MyListButton.swift */,
+				2BA3FDA32C6D126B000F0F13 /* RateButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				2B87E73B2C59560000B01934 /* Color+Extensions.swift in Sources */,
 				2BD5451B2C52A23100B69510 /* NetflixCloneApp.swift in Sources */,
 				2BF8F46B2C6662C30076C0FF /* DetailsHeaderView.swift in Sources */,
+				2BA3FDA42C6D126B000F0F13 /* RateButton.swift in Sources */,
 				2BD5452F2C52A9D300B69510 /* Constants.swift in Sources */,
 				2B87E7442C59607800B01934 /* FilterBarView.swift in Sources */,
 				2BD545342C52D07900B69510 /* Product.swift in Sources */,
