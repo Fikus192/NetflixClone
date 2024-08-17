@@ -20,6 +20,7 @@
 		2BA3FDA22C6D0FBA000F0F13 /* MyListButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA3FDA12C6D0FBA000F0F13 /* MyListButton.swift */; };
 		2BA3FDA42C6D126B000F0F13 /* RateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA3FDA32C6D126B000F0F13 /* RateButton.swift */; };
 		2BA3FDA62C6F716D000F0F13 /* ShareButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA3FDA52C6F716D000F0F13 /* ShareButton.swift */; };
+		2BA3FDA92C70BC5A000F0F13 /* SwiftfulRouting in Frameworks */ = {isa = PBXBuildFile; productRef = 2BA3FDA82C70BC5A000F0F13 /* SwiftfulRouting */; };
 		2BD5451B2C52A23100B69510 /* NetflixCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD5451A2C52A23100B69510 /* NetflixCloneApp.swift */; };
 		2BD5451D2C52A23100B69510 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD5451C2C52A23100B69510 /* HomeView.swift */; };
 		2BD5451F2C52A23200B69510 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BD5451E2C52A23200B69510 /* Assets.xcassets */; };
@@ -72,6 +73,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BD5452A2C52A91600B69510 /* SDWebImageSwiftUI in Frameworks */,
+				2BA3FDA92C70BC5A000F0F13 /* SwiftfulRouting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +203,7 @@
 			name = NetflixClone;
 			packageProductDependencies = (
 				2BD545292C52A91600B69510 /* SDWebImageSwiftUI */,
+				2BA3FDA82C70BC5A000F0F13 /* SwiftfulRouting */,
 			);
 			productName = NetflixClone;
 			productReference = 2BD545172C52A23100B69510 /* NetflixClone.app */;
@@ -232,6 +235,7 @@
 			mainGroup = 2BD5450E2C52A23100B69510;
 			packageReferences = (
 				2BD545282C52A91600B69510 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				2BA3FDA72C70BC5A000F0F13 /* XCRemoteSwiftPackageReference "SwiftfulRouting" */,
 			);
 			productRefGroup = 2BD545182C52A23100B69510 /* Products */;
 			projectDirPath = "";
@@ -490,6 +494,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		2BA3FDA72C70BC5A000F0F13 /* XCRemoteSwiftPackageReference "SwiftfulRouting" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftfulThinking/SwiftfulRouting.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.3.5;
+			};
+		};
 		2BD545282C52A91600B69510 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
@@ -501,6 +513,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		2BA3FDA82C70BC5A000F0F13 /* SwiftfulRouting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2BA3FDA72C70BC5A000F0F13 /* XCRemoteSwiftPackageReference "SwiftfulRouting" */;
+			productName = SwiftfulRouting;
+		};
 		2BD545292C52A91600B69510 /* SDWebImageSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 2BD545282C52A91600B69510 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
